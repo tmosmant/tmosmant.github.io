@@ -23,6 +23,7 @@
         font-size: 26px;
         color: #E1E1E1;
         background: #2A3D62;
+        background: radial-gradient(at left, #000, #2A3D62);
         vertical-align: middle;
       }
 
@@ -33,16 +34,17 @@
       }
 
       .avatar {
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
         background-image: url(assets/thomas.jpg);
-        background-size: 190px;
+        background-size: 260px;
         background-repeat: no-repeat;
-        background-position: -36px -22px;
+        background-position: -30px -20px;
         border-radius: 50%;
-        box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.3);
         transition: all 0.4s;
-        transition-timing-function: cubic-bezier(0.18, 0.52, 0.51, 1.61);
+        transition-timing-function: cubic-bezier(0.18, 0.52, 0.21, 1.62);
+        border: 3px solid #E1E1E1;
       }
 
       .avatar:hover {
@@ -55,7 +57,7 @@
       .avatar, .description {
         display: inline-block;
         vertical-align: middle;
-        margin: 5px 15px;
+        margin: 15px 15px;
       }
 
       p {
