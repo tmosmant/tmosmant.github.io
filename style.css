@@ -1,0 +1,50 @@
+body {
+  display: table-cell;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  color: #E1E1E1;
+  background: #2A3D62;
+  vertical-align: middle;
+}
+
+.container {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  background-image: url(assets/thomas.jpg);
+  background-size: 260px;
+  background-repeat: no-repeat;
+  background-position: -30px -20px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+  transition-timing-function: cubic-bezier(0.18, 0.52, 0.21, 1.62);
+  border: 3px solid #E1E1E1;
+}
+
+.avatar:hover {
+  height: 200px;
+  width: 200px;
+  background-size: 380px;
+  background-position: -166px -122px;
+}
+
+.avatar, .description {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 15px 15px;
+}
+
+p {
+  margin: 5px 0;
+  text-align: left;
+}
