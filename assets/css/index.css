@@ -1,0 +1,96 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at bottom left, #000, #000, #000, #61191a);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+}
+
+figure {
+  flex-shrink: 0;
+  margin: 0 50px 0 0;
+  background: url('../img/thomas.jpg');
+  background-position: center center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+a {
+  position: relative;
+  font-weight: 600;
+  text-decoration: none;
+  color: #F85557;
+  padding: 0 4px;
+  border-bottom: 2px solid white;
+  transition: color .2s ease-in-out, background .2s ease-in-out;
+}
+
+a:hover {
+  background: white;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3.5em;
+  line-height: 1em;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1084px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figure {
+    margin: 0 0 50px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: .7em;
+  }
+
+  figure {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.fr, .en {
+  display: none;
+}
