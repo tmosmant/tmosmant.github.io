@@ -53,6 +53,13 @@ figure > div {
 .avatar {
   background: url('../img/thomas.jpg');
   background-size: contain;
+  opacity: 0;
+  animation: .5s ease-in 1s fadeIn forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 a {
