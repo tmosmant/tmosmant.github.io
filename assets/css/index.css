@@ -3,6 +3,10 @@ html, body {
   width: 100%;
 }
 
+* {
+  transition: all .4s ease-in;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -29,15 +33,38 @@ article {
 }
 
 figure {
+  position: relative;
   flex-shrink: 0;
   margin: 0 50px 0 0;
-  background: url('../img/thomas.jpg');
-  background-position: center center;
-  background-size: contain;
   width: 300px;
   height: 300px;
+}
+
+figure > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   border: 5px solid white;
   border-radius: 50%;
+}
+
+.avatar-placeholder-2 {
+  opacity: 0;
+  animation: .2s ease-out shadeIn forwards;
+}
+
+.avatar {
+  background: url('../img/thomas.jpg');
+  background-size: contain;
+  opacity: 0;
+  animation: .3s ease-in .3s shadeIn forwards;
+}
+
+@keyframes shadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 a {
