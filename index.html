@@ -67,6 +67,9 @@
           ? navigator.languages[0]
           : navigator.language || navigator.userLanguage || "en";
         var language = browserLanguage.substr(0, 2).toLowerCase();
+        if (['fr', 'en'].indexOf(language) === -1) {
+          language = 'en';
+        } 
         var elements = document.getElementsByClassName(language);
 
         for (var i = 0; i < elements.length; i++) {
